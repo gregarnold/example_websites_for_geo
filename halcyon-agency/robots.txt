@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://halcyon-agency.com/sitemap.xml

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Halcyon Agency</title>
+<meta name="description" content="Start a conversation with Halcyon Agency. Strategy calls, project inquiries, and partnership discussions. Austin, TX.">
+<link rel="canonical" href="https://halcyon-agency.com/contact.html">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        navy: '#1a2744',
+        slate: '#3d5a80',
+        gold: '#e8b931',
+        cream: '#faf8f2',
+      }
+    }
+  }
+}
+</script>
+</head>
+<body class="bg-cream text-navy">
+
+<!-- Navigation -->
+<nav class="bg-navy text-white">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <a href="/" class="text-2xl font-bold tracking-tight">Halcyon<span class="text-gold">.</span></a>
+    <div class="hidden md:flex space-x-8 text-sm uppercase tracking-wider">
+      <a href="/about.html" class="hover:text-gold transition">About</a>
+      <a href="/services.html" class="hover:text-gold transition">Services</a>
+      <a href="/case-studies.html" class="hover:text-gold transition">Case Studies</a>
+      <a href="/tools.html" class="hover:text-gold transition">Tools</a>
+      <a href="/blog/" class="hover:text-gold transition">Insights</a>
+      <a href="/contact.html" class="text-gold">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="bg-navy text-white py-16">
+  <div class="max-w-4xl mx-auto px-6">
+    <h1 class="text-4xl font-bold mb-4">Let's Talk</h1>
+    <p class="text-lg text-gray-300">Every engagement starts with a conversation. No pitch deck, no pressure.</p>
+  </div>
+</section>
+
+<!-- Contact Form + Info -->
+<section class="py-16">
+  <div class="max-w-4xl mx-auto px-6">
+    <div class="grid md:grid-cols-2 gap-12">
+      <!-- Form -->
+      <div>
+        <h4 class="text-2xl font-bold mb-6">Start a Conversation</h4>
+        <form class="space-y-4" onsubmit="event.preventDefault(); alert('This is a demonstration website. Form submissions are not processed.');">
+          <div>
+            <label class="block text-sm font-medium mb-1" for="name">Name</label>
+            <input type="text" id="name" name="name" class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:border-gold" placeholder="Your name">
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-1" for="email">Email</label>
+            <input type="email" id="email" name="email" class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:border-gold" placeholder="you@company.com">
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-1" for="company">Company</label>
+            <input type="text" id="company" name="company" class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:border-gold" placeholder="Company name">
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-1" for="interest">What are you interested in?</label>
+            <select id="interest" name="interest" class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:border-gold">
+              <option value="">Select one</option>
+              <option value="strategy">Brand Strategy Sprint</option>
+              <option value="retainer">Growth Retainer</option>
+              <option value="analytics">Analytics Setup</option>
+              <option value="other">Something else</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-1" for="message">Tell us about your situation</label>
+            <textarea id="message" name="message" rows="4" class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:border-gold" placeholder="What are you trying to accomplish?"></textarea>
+          </div>
+          <button type="submit" class="bg-navy text-white font-semibold px-8 py-3 rounded hover:bg-slate transition w-full">Send Message</button>
+        </form>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="space-y-8">
+        <div>
+          <h4 class="text-2xl font-bold mb-4">Contact Information</h4>
+          <div class="space-y-4 text-gray-700">
+            <div>
+              <p class="font-semibold">Email</p>
+              <a href="mailto:hello@halcyon-agency.com" class="text-slate hover:text-gold">hello@halcyon-agency.com</a>
+            </div>
+            <div>
+              <p class="font-semibold">Phone</p>
+              <a href="tel:+15125550147" class="text-slate hover:text-gold">512-555-0147</a>
+            </div>
+            <div>
+              <p class="font-semibold">Office</p>
+              <p>412 Congress Avenue, Suite 300<br>Austin, TX 78701</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="font-bold mb-3">What to Expect</h4>
+          <ol class="space-y-3 text-sm text-gray-600">
+            <li class="flex items-start space-x-3">
+              <span class="bg-navy text-white w-6 h-6 rounded-full flex items-center justify-center text-xs flex-shrink-0 mt-0.5">1</span>
+              <span>We respond within one business day.</span>
+            </li>
+            <li class="flex items-start space-x-3">
+              <span class="bg-navy text-white w-6 h-6 rounded-full flex items-center justify-center text-xs flex-shrink-0 mt-0.5">2</span>
+              <span>A 30-minute strategy call with a senior strategist (not a sales rep).</span>
+            </li>
+            <li class="flex items-start space-x-3">
+              <span class="bg-navy text-white w-6 h-6 rounded-full flex items-center justify-center text-xs flex-shrink-0 mt-0.5">3</span>
+              <span>If there is a fit, we send a scoping proposal within one week.</span>
+            </li>
+          </ol>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <h4 class="font-bold mb-2">Not ready to talk?</h4>
+          <p class="text-sm text-gray-600">Read our <a href="/case-studies.html" class="text-slate hover:text-gold underline">case studies</a> or <a href="/blog/" class="text-slate hover:text-gold underline">insights blog</a> to see how we think before you reach out.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-gray-400 py-12">
+  <div class="max-w-5xl mx-auto px-6">
+    <div class="grid md:grid-cols-4 gap-8">
+      <div>
+        <span class="text-white text-xl font-bold">Halcyon<span class="text-gold">.</span></span>
+        <p class="text-sm mt-3">Strategy-led marketing for growth-stage B2B companies. Austin, TX.</p>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-3">Services</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/services.html" class="hover:text-white">Brand Strategy</a></li>
+          <li><a href="/services.html" class="hover:text-white">Content Marketing</a></li>
+          <li><a href="/services.html" class="hover:text-white">Marketing Analytics</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-3">Company</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/about.html" class="hover:text-white">About</a></li>
+          <li><a href="/case-studies.html" class="hover:text-white">Case Studies</a></li>
+          <li><a href="/blog/" class="hover:text-white">Insights</a></li>
+          <li><a href="/contact.html" class="hover:text-white">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-3">Connect</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="mailto:hello@halcyon-agency.com" class="hover:text-white">hello@halcyon-agency.com</a></li>
+          <li><a href="tel:+15125550147" class="hover:text-white">512-555-0147</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-gray-700 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center text-xs">
+      <p>&copy; 2026 Halcyon Agency. All rights reserved.</p>
+      <div class="flex items-center space-x-4 mt-3 md:mt-0">
+        <span class="text-gray-500">This is a demonstration website created by GeoScored.</span>
+        <a href="https://geoscored.ai" class="text-gray-500 hover:text-gray-300">Audited by GeoScored</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

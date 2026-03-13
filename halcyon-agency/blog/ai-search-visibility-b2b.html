@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why B2B Companies Are Invisible to AI Search | Halcyon Agency</title>
+<meta name="description" content="AI search is the primary discovery channel for B2B buyers. Most B2B websites are structurally invisible to AI models. Here's why, and what to fix.">
+<link rel="canonical" href="https://halcyon-agency.com/blog/ai-search-visibility-b2b.html">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        navy: '#1a2744',
+        slate: '#3d5a80',
+        gold: '#e8b931',
+        cream: '#faf8f2',
+      }
+    }
+  }
+}
+</script>
+</head>
+<body class="bg-cream text-navy">
+
+<!-- Navigation -->
+<nav class="bg-navy text-white">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <a href="/" class="text-2xl font-bold tracking-tight">Halcyon<span class="text-gold">.</span></a>
+    <div class="hidden md:flex space-x-8 text-sm uppercase tracking-wider">
+      <a href="/about.html" class="hover:text-gold transition">About</a>
+      <a href="/services.html" class="hover:text-gold transition">Services</a>
+      <a href="/case-studies.html" class="hover:text-gold transition">Case Studies</a>
+      <a href="/tools.html" class="hover:text-gold transition">Tools</a>
+      <a href="/blog/" class="text-gold">Insights</a>
+      <a href="/contact.html" class="hover:text-gold transition">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Article -->
+<article class="py-16">
+  <div class="max-w-3xl mx-auto px-6">
+
+    <!-- Header -->
+    <header class="mb-10">
+      <div class="text-sm text-gray-400 mb-3">February 18, 2026 &middot; Marcus Chen, Head of Strategy</div>
+      <h1 class="text-4xl font-bold leading-tight mb-4">Why B2B Companies Are Invisible to AI Search (And What to Do About It)</h1>
+      <p class="text-lg text-gray-600">The structural gap between SEO readiness and AI readiness is wider than most marketing teams realize. Here is what we have learned from auditing client content across both dimensions.</p>
+    </header>
+
+    <!-- DELIBERATE STRENGTH: Citations and references throughout -->
+    <!-- DELIBERATE WEAKNESS: Heading hierarchy issues - h4 used instead of h2 -->
+
+    <div class="prose max-w-none space-y-6 text-gray-700">
+
+      <p>AI search is not coming. It is here. According to <a href="https://6sense.com/resources/reports/2025-buyer-experience-report" class="text-slate hover:text-gold underline">6sense's 2025 Buyer Experience Report</a>, more than 50% of B2B buyers now ask AI for vendor shortlists before they open Google. That number was 28% in 2024. The shift is accelerating.</p>
+
+      <p>For B2B marketers, this creates an urgent problem: the content strategies that worked for Google do not automatically work for AI models. The ranking factors are different. The content structures that earn citations are different. And most B2B websites are structurally invisible to AI search because they were built for a different paradigm.</p>
+
+      <h4 class="text-2xl font-bold mt-10 mb-4">The Structural Gap</h4>
+
+      <p>Google evaluates pages. AI models evaluate passages. This distinction is the root of most AI visibility failures.</p>
+
+      <p>A typical B2B product page is optimized for Google: keyword in the title, meta description, H1, and sprinkled through the body copy. The page ranks well for its target keyword. But AI models do not rank pages. They extract passages: self-contained chunks of text that answer a specific question. If your content is not structured as independently citable passages, AI models will skip it in favor of content that is.</p>
+
+      <p>Research from <a href="https://sparktoro.com/blog" class="text-slate hover:text-gold underline">Rand Fishkin's analysis of GEO factors</a> found that branded web mentions correlate at 0.664 with AI visibility, compared to 0.218 for traditional backlinks. This suggests that the factors driving AI citations are fundamentally different from those driving Google rankings.</p>
+
+      <h4 class="text-2xl font-bold mt-10 mb-4">Five Structural Problems We See Repeatedly</h4>
+
+      <p>After auditing content for more than 30 B2B clients over the past 18 months, we see the same five structural problems consistently:</p>
+
+      <p><strong>1. Fact-sparse content.</strong> AI models preferentially cite content with high fact density: specific numbers, named entities, verifiable claims. Most B2B content is opinion-heavy and fact-light. "Our innovative platform helps teams work better" contains zero citable facts. "Our platform reduced median onboarding time from 14 days to 3 days across 200+ enterprise deployments" contains three.</p>
+
+      <p><strong>2. Non-self-contained paragraphs.</strong> Each paragraph should make sense without the surrounding context. AI models extract passages in isolation. If your paragraph starts with "Additionally..." or "As mentioned above...", it is structurally dependent on prior paragraphs and unlikely to be extracted as a citation.</p>
+
+      <p><strong>3. Missing schema markup.</strong> Organization, LocalBusiness, Article, and FAQ schema types help AI models understand entity relationships and content structure. According to <a href="https://schema.org/docs/gs.html" class="text-slate hover:text-gold underline">Schema.org documentation</a>, structured data provides explicit signals about content semantics that both search engines and AI models use for entity resolution.</p>
+
+      <p><strong>4. JavaScript-rendered content.</strong> Content rendered via client-side JavaScript is invisible to AI crawlers that do not execute JS. This includes AI overview content, dynamically loaded testimonials, tabbed content sections, and accordion FAQs. If the content is not in the initial HTML response, many AI models will not see it.</p>
+
+      <p><strong>5. Poor heading hierarchy.</strong> AI models use heading structure to understand content organization and topic boundaries. Skipped heading levels (jumping from H1 to H4), multiple H1 tags, and semantically meaningless headings ("Learn More" instead of "How to Evaluate Infrastructure Monitoring Tools") reduce AI parsing accuracy.</p>
+
+      <h4 class="text-2xl font-bold mt-10 mb-4">What to Do About It</h4>
+
+      <p>The fix is structural, not cosmetic. It requires changing how content is conceived and produced, not just how it is formatted. Here is the framework we use with clients:</p>
+
+      <p><strong>Audit first.</strong> Before optimizing anything, measure your current AI visibility baseline. Tools like <a href="https://geoscored.ai" class="text-slate hover:text-gold underline">GeoScored</a> audit content structure across multiple dimensions including fact density, passage self-containment, schema markup, and heading hierarchy. You cannot improve what you do not measure.</p>
+
+      <p><strong>Rewrite for passage extraction.</strong> Go through your top 20 pages and rewrite every paragraph to be self-contained. Remove backward references ("as we mentioned"). Front-load the key fact in each paragraph. Target 20-80 words per passage. Test by reading each paragraph in isolation: does it make a complete, citable statement?</p>
+
+      <p><strong>Add structured data.</strong> At minimum, implement Organization, Article, and FAQ schema. For service companies, add LocalBusiness and Service types. Schema markup is one of the highest-ROI AI visibility investments because it provides explicit entity signals that AI models use during citation selection.</p>
+
+      <p><strong>Increase fact density.</strong> Replace every vague claim with a specific one. Every percentage, dollar amount, time period, named customer, and verifiable metric increases the probability that an AI model will cite your content. The benchmark we use internally: aim for at least one specific, verifiable fact per 100 words.</p>
+
+      <h4 class="text-2xl font-bold mt-10 mb-4">The Window Is Open</h4>
+
+      <p>The AI search market is projected to reach $7-33 billion by 2031-2034 according to multiple analyst reports (<a href="https://www.gartner.com" class="text-slate hover:text-gold underline">Gartner</a>, <a href="https://www.grandviewresearch.com" class="text-slate hover:text-gold underline">Grand View Research</a>). B2B companies that invest in AI visibility now, while competitors are still optimizing for Google alone, will build a durable structural advantage.</p>
+
+      <p>The content quality bar is rising. The cost of producing average content is approaching zero. AI models are increasingly filtering for structural quality signals: E-E-A-T markers, author attribution, fact density, original data. The companies that invest in these signals gain lasting visibility. Those that optimize for volume lose it.</p>
+
+      <p>The window for establishing AI visibility leadership in your category is measured in months, not years. We are helping our clients move now.</p>
+
+    </div>
+
+    <!-- Author -->
+    <div class="border-t mt-12 pt-8">
+      <div class="flex items-start space-x-4">
+        <div class="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center flex-shrink-0">
+          <span class="text-gray-400 text-xs">MC</span>
+        </div>
+        <div>
+          <p class="font-semibold">Marcus Chen</p>
+          <p class="text-sm text-gray-500">Head of Strategy at Halcyon Agency. Former strategist at Edelman and McKinsey. Writes about competitive positioning, content strategy, and the intersection of marketing and AI.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</article>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-gray-400 py-12">
+  <div class="max-w-5xl mx-auto px-6">
+    <div class="grid md:grid-cols-4 gap-8">
+      <div>
+        <span class="text-white text-xl font-bold">Halcyon<span class="text-gold">.</span></span>
+        <p class="text-sm mt-3">Strategy-led marketing for growth-stage B2B companies. Austin, TX.</p>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-3">Services</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/services.html" class="hover:text-white">Brand Strategy</a></li>
+          <li><a href="/services.html" class="hover:text-white">Content Marketing</a></li>
+          <li><a href="/services.html" class="hover:text-white">Marketing Analytics</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-3">Company</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/about.html" class="hover:text-white">About</a></li>
+          <li><a href="/case-studies.html" class="hover:text-white">Case Studies</a></li>
+          <li><a href="/blog/" class="hover:text-white">Insights</a></li>
+          <li><a href="/contact.html" class="hover:text-white">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-3">Connect</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="mailto:hello@halcyon-agency.com" class="hover:text-white">hello@halcyon-agency.com</a></li>
+          <li><a href="tel:+15125550147" class="hover:text-white">512-555-0147</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-gray-700 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center text-xs">
+      <p>&copy; 2026 Halcyon Agency. All rights reserved.</p>
+      <div class="flex items-center space-x-4 mt-3 md:mt-0">
+        <span class="text-gray-500">This is a demonstration website created by GeoScored.</span>
+        <a href="https://geoscored.ai" class="text-gray-500 hover:text-gray-300">Audited by GeoScored</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

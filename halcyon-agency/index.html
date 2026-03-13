@@ -3,13 +3,257 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>halcyon-agency - Coming Soon</title>
+<title>Halcyon Agency | Strategy-Led Marketing for Growth-Stage Companies</title>
+<meta name="description" content="Halcyon Agency delivers strategy-led marketing, content, and analytics for growth-stage B2B companies. Based in Austin, TX.">
+<link rel="canonical" href="https://halcyon-agency.com/">
 <script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        navy: '#1a2744',
+        slate: '#3d5a80',
+        gold: '#e8b931',
+        cream: '#faf8f2',
+      }
+    }
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Halcyon Agency",
+  "url": "https://halcyon-agency.com",
+  "logo": "https://halcyon-agency.com/images/logo.png",
+  "description": "Strategy-led marketing agency for growth-stage B2B companies. Services include brand strategy, content marketing, and marketing analytics.",
+  "foundingDate": "2019",
+  "founders": [
+    {
+      "@type": "Person",
+      "name": "Elena Vasquez"
+    }
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "412 Congress Avenue, Suite 300",
+    "addressLocality": "Austin",
+    "addressRegion": "TX",
+    "postalCode": "78701",
+    "addressCountry": "US"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "sales",
+    "email": "hello@halcyon-agency.com"
+  },
+  "sameAs": [
+    "https://linkedin.com/company/halcyon-agency",
+    "https://twitter.com/halcyonagency"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Halcyon Agency",
+  "image": "https://halcyon-agency.com/images/office.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "412 Congress Avenue, Suite 300",
+    "addressLocality": "Austin",
+    "addressRegion": "TX",
+    "postalCode": "78701",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 30.2672,
+    "longitude": -97.7431
+  },
+  "telephone": "+1-512-555-0147",
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "09:00",
+    "closes": "18:00"
+  },
+  "priceRange": "$$$$"
+}
+</script>
 </head>
-<body class="min-h-screen flex items-center justify-center bg-gray-100">
-<div class="text-center">
-<h1 class="text-4xl font-bold text-gray-800 mb-4">Coming Soon</h1>
-<p class="text-gray-600">This site is under construction.</p>
-</div>
+<body class="bg-cream text-navy">
+
+<!-- Navigation -->
+<nav class="bg-navy text-white">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <a href="/" class="text-2xl font-bold tracking-tight">Halcyon<span class="text-gold">.</span></a>
+    <div class="hidden md:flex space-x-8 text-sm uppercase tracking-wider">
+      <a href="/about.html" class="hover:text-gold transition">About</a>
+      <a href="/services.html" class="hover:text-gold transition">Services</a>
+      <a href="/case-studies.html" class="hover:text-gold transition">Case Studies</a>
+      <a href="/tools.html" class="hover:text-gold transition">Tools</a>
+      <a href="/blog/" class="hover:text-gold transition">Insights</a>
+      <a href="/contact.html" class="hover:text-gold transition">Contact</a>
+    </div>
+    <button id="mobile-menu-btn" class="md:hidden text-white">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2">
+    <a href="/about.html" class="block text-sm hover:text-gold">About</a>
+    <a href="/services.html" class="block text-sm hover:text-gold">Services</a>
+    <a href="/case-studies.html" class="block text-sm hover:text-gold">Case Studies</a>
+    <a href="/tools.html" class="block text-sm hover:text-gold">Tools</a>
+    <a href="/blog/" class="block text-sm hover:text-gold">Insights</a>
+    <a href="/contact.html" class="block text-sm hover:text-gold">Contact</a>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="bg-navy text-white py-24">
+  <div class="max-w-5xl mx-auto px-6 text-center">
+    <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">Strategy-led marketing<br>for companies that outgrow tactics.</h1>
+    <p class="text-lg text-gray-300 max-w-2xl mx-auto mb-10">Halcyon Agency partners with growth-stage B2B companies to build marketing systems that compound. Strategy first. Execution second. Measurement always.</p>
+    <div class="flex justify-center space-x-4">
+      <a href="/contact.html" class="bg-gold text-navy font-semibold px-8 py-3 rounded hover:bg-yellow-400 transition">Start a Conversation</a>
+      <a href="/case-studies.html" class="border border-white text-white px-8 py-3 rounded hover:bg-white hover:text-navy transition">See Our Work</a>
+    </div>
+  </div>
+</section>
+
+<!-- Client Logos -->
+<section class="py-16 bg-white">
+  <div class="max-w-5xl mx-auto px-6 text-center">
+    <p class="text-sm uppercase tracking-widest text-gray-400 mb-8">Trusted by growth-stage teams</p>
+    <div class="grid grid-cols-2 md:grid-cols-5 gap-8 items-center opacity-40">
+      <div class="h-10 flex items-center justify-center"><span class="text-xl font-bold text-gray-500">Vectrix</span></div>
+      <div class="h-10 flex items-center justify-center"><span class="text-xl font-bold text-gray-500">Candela</span></div>
+      <div class="h-10 flex items-center justify-center"><span class="text-xl font-bold text-gray-500">Oaktree SaaS</span></div>
+      <div class="h-10 flex items-center justify-center"><span class="text-xl font-bold text-gray-500">Reforge</span></div>
+      <div class="h-10 flex items-center justify-center"><span class="text-xl font-bold text-gray-500">Nimbus</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- Services Overview -->
+<section class="py-20">
+  <div class="max-w-5xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-4">What We Do</h2>
+    <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">Three practices, one integrated approach. Every engagement starts with strategy and ends with measurable outcomes.</p>
+    <div class="grid md:grid-cols-3 gap-10">
+      <div class="bg-white p-8 rounded-lg shadow-sm">
+        <div class="w-12 h-12 bg-navy rounded-lg flex items-center justify-center mb-4">
+          <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-3">Brand Strategy</h3>
+        <p class="text-gray-600">Positioning, messaging architecture, and competitive differentiation. We define where you stand before we decide what to say.</p>
+        <a href="/services.html" class="text-slate font-medium mt-4 inline-block hover:text-gold">Learn more &rarr;</a>
+      </div>
+      <div class="bg-white p-8 rounded-lg shadow-sm">
+        <div class="w-12 h-12 bg-navy rounded-lg flex items-center justify-center mb-4">
+          <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-3">Content Marketing</h3>
+        <p class="text-gray-600">Editorial strategy, production, and distribution across channels. Content that earns attention from both humans and AI systems.</p>
+        <a href="/services.html" class="text-slate font-medium mt-4 inline-block hover:text-gold">Learn more &rarr;</a>
+      </div>
+      <div class="bg-white p-8 rounded-lg shadow-sm">
+        <div class="w-12 h-12 bg-navy rounded-lg flex items-center justify-center mb-4">
+          <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-3">Marketing Analytics</h3>
+        <p class="text-gray-600">Attribution modeling, pipeline analytics, and performance dashboards. We measure what matters and cut what doesn't.</p>
+        <a href="/services.html" class="text-slate font-medium mt-4 inline-block hover:text-gold">Learn more &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Results Bar -->
+<section class="bg-navy text-white py-16">
+  <div class="max-w-5xl mx-auto px-6">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+      <div>
+        <div class="text-4xl font-bold text-gold">47</div>
+        <div class="text-sm text-gray-300 mt-1">Clients served since 2019</div>
+      </div>
+      <div>
+        <div class="text-4xl font-bold text-gold">3.2x</div>
+        <div class="text-sm text-gray-300 mt-1">Average pipeline lift</div>
+      </div>
+      <div>
+        <div class="text-4xl font-bold text-gold">91%</div>
+        <div class="text-sm text-gray-300 mt-1">Client retention rate</div>
+      </div>
+      <div>
+        <div class="text-4xl font-bold text-gold">14</div>
+        <div class="text-sm text-gray-300 mt-1">Months avg. engagement</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="py-20 text-center">
+  <div class="max-w-3xl mx-auto px-6">
+    <h2 class="text-3xl font-bold mb-4">Ready to stop guessing?</h2>
+    <p class="text-gray-600 mb-8">We start every engagement with a 30-minute strategy call. No pitch deck, no pressure. Just a conversation about where you are and where you want to be.</p>
+    <a href="/contact.html" class="bg-navy text-white font-semibold px-10 py-4 rounded hover:bg-slate transition">Book a Strategy Call</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-gray-400 py-12">
+  <div class="max-w-5xl mx-auto px-6">
+    <div class="grid md:grid-cols-4 gap-8">
+      <div>
+        <span class="text-white text-xl font-bold">Halcyon<span class="text-gold">.</span></span>
+        <p class="text-sm mt-3">Strategy-led marketing for growth-stage B2B companies. Austin, TX.</p>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-3">Services</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/services.html" class="hover:text-white">Brand Strategy</a></li>
+          <li><a href="/services.html" class="hover:text-white">Content Marketing</a></li>
+          <li><a href="/services.html" class="hover:text-white">Marketing Analytics</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-3">Company</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/about.html" class="hover:text-white">About</a></li>
+          <li><a href="/case-studies.html" class="hover:text-white">Case Studies</a></li>
+          <li><a href="/blog/" class="hover:text-white">Insights</a></li>
+          <li><a href="/contact.html" class="hover:text-white">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-3">Connect</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="mailto:hello@halcyon-agency.com" class="hover:text-white">hello@halcyon-agency.com</a></li>
+          <li><a href="tel:+15125550147" class="hover:text-white">512-555-0147</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-gray-700 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center text-xs">
+      <p>&copy; 2026 Halcyon Agency. All rights reserved.</p>
+      <div class="flex items-center space-x-4 mt-3 md:mt-0">
+        <span class="text-gray-500">This is a demonstration website created by GeoScored.</span>
+        <a href="https://geoscored.ai" class="text-gray-500 hover:text-gray-300">Audited by GeoScored</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+  document.getElementById('mobile-menu').classList.toggle('hidden');
+});
+</script>
+
 </body>
 </html>
