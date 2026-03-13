@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu | Foxglove Bakery</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        cream: '#FFF8F0',
+        warmbrown: '#5C3D2E',
+        dustyrose: '#C4917B',
+        sage: '#8B9D83',
+        gold: '#D4A853',
+      }
+    }
+  }
+}
+</script>
+</head>
+<body class="bg-cream text-warmbrown font-serif">
+
+<!-- Navigation -->
+<nav class="bg-white shadow-sm sticky top-0 z-50">
+  <div class="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
+    <a href="/" class="text-2xl font-bold tracking-wide text-warmbrown">Foxglove Bakery</a>
+    <div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest">
+      <a href="/" class="hover:text-dustyrose transition-colors">Home</a>
+      <a href="/menu.html" class="text-dustyrose font-semibold">Menu</a>
+      <a href="/about.html" class="hover:text-dustyrose transition-colors">About</a>
+      <a href="/contact.html" class="hover:text-dustyrose transition-colors">Visit Us</a>
+    </div>
+    <button id="mobile-menu-btn" class="md:hidden text-warmbrown">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden px-4 pb-4 space-y-2 text-sm uppercase tracking-widest">
+    <a href="/" class="block hover:text-dustyrose">Home</a>
+    <a href="/menu.html" class="block text-dustyrose font-semibold">Menu</a>
+    <a href="/about.html" class="block hover:text-dustyrose">About</a>
+    <a href="/contact.html" class="block hover:text-dustyrose">Visit Us</a>
+  </div>
+</nav>
+
+<!-- Page Header -->
+<section class="bg-warmbrown text-cream py-16 text-center">
+  <h1 class="text-4xl font-bold mb-3">Our Menu</h1>
+  <p class="text-cream/70 max-w-xl mx-auto">Everything is baked fresh each morning. Availability depends on the season and what our farmers bring us. Prices updated January 2024.</p>
+</section>
+
+<!-- Menu Content -->
+<section class="py-16">
+  <div class="max-w-3xl mx-auto px-4">
+
+    <!-- Bread -->
+    <div class="mb-12">
+      <h2 class="text-2xl font-bold mb-1 text-dustyrose">Bread</h2>
+      <p class="text-warmbrown/50 text-sm mb-6">Baked overnight. Available from open until sold out.</p>
+
+      <div class="space-y-4">
+        <div class="flex justify-between items-baseline border-b border-warmbrown/10 pb-3">
+          <div>
+            <h3 class="font-bold">Rosemary Sea Salt Sourdough</h3>
+            <p class="text-warmbrown/60 text-sm">24-hour ferment, local rosemary, Maldon sea salt</p>
+          </div>
+          <span class="text-gold font-bold whitespace-nowrap ml-4">$8.50</span>
+        </div>
+
+        <div class="flex justify-between items-baseline border-b border-warmbrown/10 pb-3">
+          <div>
+            <h3 class="font-bold">Country White</h3>
+            <p class="text-warmbrown/60 text-sm">Classic sandwich loaf, soft crumb, thin crust</p>
+          </div>
+          <span class="text-gold font-bold whitespace-nowrap ml-4">$6.00</span>
+        </div>
+
+        <div class="flex justify-between items-baseline border-b border-warmbrown/10 pb-3">
+          <div>
+            <h3 class="font-bold">Whole Wheat Honey Oat</h3>
+            <p class="text-warmbrown/60 text-sm">Stone-ground wheat, local honey, rolled oats</p>
+          </div>
+          <span class="text-gold font-bold whitespace-nowrap ml-4">$7.50</span>
+        </div>
+
+        <div class="flex justify-between items-baseline border-b border-warmbrown/10 pb-3">
+          <div>
+            <h3 class="font-bold">Olive Focaccia</h3>
+            <p class="text-warmbrown/60 text-sm">Kalamata olives, extra virgin olive oil, flaky salt. Half sheet.</p>
+          </div>
+          <span class="text-gold font-bold whitespace-nowrap ml-4">$10.00</span>
+        </div>
+
+        <div class="flex justify-between items-baseline border-b border-warmbrown/10 pb-3">
+          <div>
+            <h3 class="font-bold">Seeded Rye</h3>
+            <p class="text-warmbrown/60 text-sm">Caraway, sunflower, and flax seeds. Dense, Nordic-style.</p>
+          </div>
+          <span class="text-gold font-bold whitespace-nowrap ml-4">$8.00</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pastries -->
+    <div class="mb-12">
+      <h2 class="text-2xl font-bold mb-1 text-dustyrose">Pastries</h2>
+      <p class="text-warmbrown/50 text-sm mb-6">Best before noon. We don't hold pastries overnight.</p>
+
+      <div class="space-y-4">
+        <div class="flex justify-between items-baseline border-b border-warmbrown/10 pb-3">
+          <div>
+            <h3 class="font-bold">Maple Pecan Morning Bun</h3>
+            <p class="text-warmbrown/60 text-sm">Laminated pastry, local maple syrup, toasted pecans</p>
+          </div>
+          <span class="text-gold font-bold whitespace-nowrap ml-4">$5.25</span>
+        </div>
+
+        <div class="flex justify-between items-baseline border-b border-warmbrown/10 pb-3">
+          <div>
+            <h3 class="font-bold">Plain Croissant</h3>
+            <p class="text-warmbrown/60 text-sm">Butter from Mapleline Farm. Three-day lamination process.</p>
+          </div>
+          <span class="text-gold font-bold whitespace-nowrap ml-4">$4.50</span>
+        </div>
+
+        <div class="flex justify-between items-baseline border-b border-warmbrown/10 pb-3">
+          <div>
+            <h3 class="font-bold">Chocolate Croissant</h3>
+            <p class="text-warmbrown/60 text-sm">Two bars of Callebaut dark chocolate in each one</p>
+          </div>
+          <span class="text-gold font-bold whitespace-nowrap ml-4">$5.00</span>
+        </div>
+
+        <div class="flex justify-between items-baseline border-b border-warmbrown/10 pb-3">
+          <div>
+            <h3 class="font-bold">Almond Frangipane Tart</h3>
+            <p class="text-warmbrown/60 text-sm">Puff pastry base, almond cream, sliced almonds, powdered sugar</p>
+          </div>
+          <span class="text-gold font-bold whitespace-nowrap ml-4">$5.50</span>
+        </div>
+
+        <div class="flex justify-between items-baseline border-b border-warmbrown/10 pb-3">
+          <div>
+            <h3 class="font-bold">Blueberry Scone</h3>
+            <p class="text-warmbrown/60 text-sm">Buttermilk scone with wild blueberries, lemon glaze</p>
+          </div>
+          <span class="text-gold font-bold whitespace-nowrap ml-4">$4.00</span>
+        </div>
+
+        <div class="flex justify-between items-baseline border-b border-warmbrown/10 pb-3">
+          <div>
+            <h3 class="font-bold">Cardamom Knot</h3>
+            <p class="text-warmbrown/60 text-sm">Swedish-style, hand-twisted, pearl sugar topping</p>
+          </div>
+          <span class="text-gold font-bold whitespace-nowrap ml-4">$4.75</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cakes & Special Orders -->
+    <div class="mb-12">
+      <h2 class="text-2xl font-bold mb-1 text-dustyrose">Cakes &amp; Special Orders</h2>
+      <p class="text-warmbrown/50 text-sm mb-6">Pre-order at least 48 hours in advance. Call or stop by.</p>
+
+      <div class="space-y-4">
+        <div class="flex justify-between items-baseline border-b border-warmbrown/10 pb-3">
+          <div>
+            <h3 class="font-bold">Lemon Elderflower Cake</h3>
+            <p class="text-warmbrown/60 text-sm">Three layers, elderflower buttercream, serves 8-10</p>
+          </div>
+          <span class="text-gold font-bold whitespace-nowrap ml-4">$48.00</span>
+        </div>
+
+        <div class="flex justify-between items-baseline border-b border-warmbrown/10 pb-3">
+          <div>
+            <h3 class="font-bold">Chocolate Stout Cake</h3>
+            <p class="text-warmbrown/60 text-sm">Dark chocolate, Berkshire Brewing stout, cream cheese frosting, serves 10-12</p>
+          </div>
+          <span class="text-gold font-bold whitespace-nowrap ml-4">$55.00</span>
+        </div>
+
+        <div class="flex justify-between items-baseline border-b border-warmbrown/10 pb-3">
+          <div>
+            <h3 class="font-bold">Carrot Cake</h3>
+            <p class="text-warmbrown/60 text-sm">Walnuts, golden raisins, cream cheese frosting, serves 8-10</p>
+          </div>
+          <span class="text-gold font-bold whitespace-nowrap ml-4">$42.00</span>
+        </div>
+
+        <div class="flex justify-between items-baseline border-b border-warmbrown/10 pb-3">
+          <div>
+            <h3 class="font-bold">Custom Celebration Cake</h3>
+            <p class="text-warmbrown/60 text-sm">Your choice of flavor, filling, and decoration. Price varies by size.</p>
+          </div>
+          <span class="text-gold font-bold whitespace-nowrap ml-4">From $60</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Drinks -->
+    <div class="mb-12">
+      <h2 class="text-2xl font-bold mb-1 text-dustyrose">Drinks</h2>
+      <p class="text-warmbrown/50 text-sm mb-6">Coffee from Broadsheet Roasters in Northampton.</p>
+
+      <div class="space-y-4">
+        <div class="flex justify-between items-baseline border-b border-warmbrown/10 pb-3">
+          <div>
+            <h3 class="font-bold">Drip Coffee</h3>
+            <p class="text-warmbrown/60 text-sm">12oz / 16oz</p>
+          </div>
+          <span class="text-gold font-bold whitespace-nowrap ml-4">$3.00 / $3.75</span>
+        </div>
+
+        <div class="flex justify-between items-baseline border-b border-warmbrown/10 pb-3">
+          <div>
+            <h3 class="font-bold">Latte</h3>
+            <p class="text-warmbrown/60 text-sm">Oat milk available, no upcharge</p>
+          </div>
+          <span class="text-gold font-bold whitespace-nowrap ml-4">$5.00</span>
+        </div>
+
+        <div class="flex justify-between items-baseline border-b border-warmbrown/10 pb-3">
+          <div>
+            <h3 class="font-bold">Chai Latte</h3>
+            <p class="text-warmbrown/60 text-sm">House-made chai concentrate, steamed milk</p>
+          </div>
+          <span class="text-gold font-bold whitespace-nowrap ml-4">$5.50</span>
+        </div>
+
+        <div class="flex justify-between items-baseline border-b border-warmbrown/10 pb-3">
+          <div>
+            <h3 class="font-bold">Hot Chocolate</h3>
+            <p class="text-warmbrown/60 text-sm">Real chocolate, whole milk, whipped cream</p>
+          </div>
+          <span class="text-gold font-bold whitespace-nowrap ml-4">$4.50</span>
+        </div>
+
+        <div class="flex justify-between items-baseline border-b border-warmbrown/10 pb-3">
+          <div>
+            <h3 class="font-bold">Tea</h3>
+            <p class="text-warmbrown/60 text-sm">Selection of loose-leaf teas from Harney &amp; Sons</p>
+          </div>
+          <span class="text-gold font-bold whitespace-nowrap ml-4">$3.00</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-lg p-6 text-center text-sm text-warmbrown/60">
+      <p>Prices may vary. We reserve the right to limit quantities on popular items. Please let us know about any allergies when ordering.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-warmbrown text-cream/60 py-8">
+  <div class="max-w-5xl mx-auto px-4 text-center text-sm">
+    <p class="mb-2">&copy; 2024 Foxglove Bakery. All rights reserved.</p>
+    <p class="text-cream/40">This is a demonstration website created by GeoScored.</p>
+  </div>
+</footer>
+
+<script>
+document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+  document.getElementById('mobile-menu').classList.toggle('hidden');
+});
+</script>
+
+</body>
+</html>

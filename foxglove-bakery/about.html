@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | Foxglove Bakery</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        cream: '#FFF8F0',
+        warmbrown: '#5C3D2E',
+        dustyrose: '#C4917B',
+        sage: '#8B9D83',
+        gold: '#D4A853',
+      }
+    }
+  }
+}
+</script>
+</head>
+<body class="bg-cream text-warmbrown font-serif">
+
+<!-- Navigation -->
+<nav class="bg-white shadow-sm sticky top-0 z-50">
+  <div class="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
+    <a href="/" class="text-2xl font-bold tracking-wide text-warmbrown">Foxglove Bakery</a>
+    <div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest">
+      <a href="/" class="hover:text-dustyrose transition-colors">Home</a>
+      <a href="/menu.html" class="hover:text-dustyrose transition-colors">Menu</a>
+      <a href="/about.html" class="text-dustyrose font-semibold">About</a>
+      <a href="/contact.html" class="hover:text-dustyrose transition-colors">Visit Us</a>
+    </div>
+    <button id="mobile-menu-btn" class="md:hidden text-warmbrown">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden px-4 pb-4 space-y-2 text-sm uppercase tracking-widest">
+    <a href="/" class="block hover:text-dustyrose">Home</a>
+    <a href="/menu.html" class="block hover:text-dustyrose">Menu</a>
+    <a href="/about.html" class="block text-dustyrose font-semibold">About</a>
+    <a href="/contact.html" class="block hover:text-dustyrose">Visit Us</a>
+  </div>
+</nav>
+
+<!-- Page Header -->
+<section class="bg-warmbrown text-cream py-16 text-center">
+  <h1 class="text-4xl font-bold mb-3">Our Story</h1>
+  <p class="text-cream/70 max-w-xl mx-auto">A small bakery with a simple idea: use good ingredients, take your time, and share what you make.</p>
+</section>
+
+<!-- Story -->
+<section class="py-16">
+  <div class="max-w-3xl mx-auto px-4">
+
+    <div class="prose prose-lg max-w-none">
+      <div class="mb-12">
+        <h2 class="text-2xl font-bold mb-4 text-dustyrose">How it started</h2>
+        <p class="text-warmbrown/80 leading-relaxed mb-4">Foxglove Bakery started in 2019 when Elena Marsh left her job as a pastry chef in Boston and moved to Ashfield. She had been baking sourdough for friends on weekends for years. When the space behind the post office came up for rent, she signed the lease the same day.</p>
+        <p class="text-warmbrown/80 leading-relaxed mb-4">The first week, she baked 30 loaves of sourdough and sold them from a folding table by the door. By the second month, she was selling out before noon. Five years later, the folding table is gone, but the sourdough recipe hasn't changed.</p>
+      </div>
+
+      <div class="mb-12">
+        <h2 class="text-2xl font-bold mb-4 text-dustyrose">What we believe</h2>
+        <p class="text-warmbrown/80 leading-relaxed mb-4">Good bread takes time. Our sourdough ferments for 24 hours. Our croissants are laminated over three days. We don't use dough conditioners, artificial flavors, or preservatives. If you can't pronounce an ingredient, we don't use it.</p>
+        <p class="text-warmbrown/80 leading-relaxed mb-4">We buy from local farms whenever possible. Our eggs come from Pine Hill Farm in Colrain. Our butter comes from Mapleline Farm in Hadley. Our flour is milled at Four Star Farms in Northfield. Supporting the people around us isn't a marketing strategy. It's how we want to run a business.</p>
+      </div>
+
+      <div class="mb-12">
+        <h2 class="text-2xl font-bold mb-4 text-dustyrose">The team</h2>
+
+        <div class="grid md:grid-cols-2 gap-8 mt-8">
+          <div class="bg-white rounded-lg p-6 shadow-sm text-center">
+            <div class="w-24 h-24 rounded-full bg-dustyrose/20 mx-auto mb-4 flex items-center justify-center">
+              <span class="text-4xl">👩‍🍳</span>
+            </div>
+            <h3 class="font-bold text-lg">Elena Marsh</h3>
+            <p class="text-dustyrose text-sm mb-2">Founder &amp; Head Baker</p>
+            <p class="text-warmbrown/60 text-sm">Former pastry chef at Flour Bakery in Boston. Sourdough obsessive. Can't stop adopting cats.</p>
+          </div>
+
+          <div class="bg-white rounded-lg p-6 shadow-sm text-center">
+            <div class="w-24 h-24 rounded-full bg-sage/20 mx-auto mb-4 flex items-center justify-center">
+              <span class="text-4xl">🧑‍🍳</span>
+            </div>
+            <h3 class="font-bold text-lg">Sam Otieno</h3>
+            <p class="text-dustyrose text-sm mb-2">Baker</p>
+            <p class="text-warmbrown/60 text-sm">Joined in 2021. Pastry school graduate from Johnson &amp; Wales. Makes the best croissants in Western Mass.</p>
+          </div>
+
+          <div class="bg-white rounded-lg p-6 shadow-sm text-center">
+            <div class="w-24 h-24 rounded-full bg-gold/20 mx-auto mb-4 flex items-center justify-center">
+              <span class="text-4xl">☕</span>
+            </div>
+            <h3 class="font-bold text-lg">Dia Patel</h3>
+            <p class="text-dustyrose text-sm mb-2">Front of House</p>
+            <p class="text-warmbrown/60 text-sm">Knows every regular's order by heart. Part-time student at UMass Amherst. Makes a perfect latte.</p>
+          </div>
+
+          <div class="bg-white rounded-lg p-6 shadow-sm text-center">
+            <div class="w-24 h-24 rounded-full bg-dustyrose/20 mx-auto mb-4 flex items-center justify-center">
+              <span class="text-4xl">🐱</span>
+            </div>
+            <h3 class="font-bold text-lg">Thyme</h3>
+            <p class="text-dustyrose text-sm mb-2">Shop Cat</p>
+            <p class="text-warmbrown/60 text-sm">Adopted 2020. Sleeps on the flour bags. Not technically an employee but acts like one.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-warmbrown text-cream/60 py-8">
+  <div class="max-w-5xl mx-auto px-4 text-center text-sm">
+    <p class="mb-2">&copy; 2024 Foxglove Bakery. All rights reserved.</p>
+    <p class="text-cream/40">This is a demonstration website created by GeoScored.</p>
+  </div>
+</footer>
+
+<script>
+document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+  document.getElementById('mobile-menu').classList.toggle('hidden');
+});
+</script>
+
+</body>
+</html>

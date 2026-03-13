@@ -3,13 +3,177 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>foxglove-bakery - Coming Soon</title>
+<title>Foxglove Bakery | Fresh Baked Daily in Ashfield</title>
 <script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        cream: '#FFF8F0',
+        warmbrown: '#5C3D2E',
+        dustyrose: '#C4917B',
+        sage: '#8B9D83',
+        gold: '#D4A853',
+      }
+    }
+  }
+}
+</script>
 </head>
-<body class="min-h-screen flex items-center justify-center bg-gray-100">
-<div class="text-center">
-<h1 class="text-4xl font-bold text-gray-800 mb-4">Coming Soon</h1>
-<p class="text-gray-600">This site is under construction.</p>
-</div>
+<body class="bg-cream text-warmbrown font-serif">
+
+<!-- Navigation -->
+<nav class="bg-white shadow-sm sticky top-0 z-50">
+  <div class="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
+    <a href="/" class="text-2xl font-bold tracking-wide text-warmbrown">Foxglove Bakery</a>
+    <div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest">
+      <a href="/" class="text-dustyrose font-semibold">Home</a>
+      <a href="/menu.html" class="hover:text-dustyrose transition-colors">Menu</a>
+      <a href="/about.html" class="hover:text-dustyrose transition-colors">About</a>
+      <a href="/contact.html" class="hover:text-dustyrose transition-colors">Visit Us</a>
+    </div>
+    <button id="mobile-menu-btn" class="md:hidden text-warmbrown">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden px-4 pb-4 space-y-2 text-sm uppercase tracking-widest">
+    <a href="/" class="block text-dustyrose font-semibold">Home</a>
+    <a href="/menu.html" class="block hover:text-dustyrose">Menu</a>
+    <a href="/about.html" class="block hover:text-dustyrose">About</a>
+    <a href="/contact.html" class="block hover:text-dustyrose">Visit Us</a>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="relative bg-warmbrown text-cream py-24 md:py-32">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <p class="text-dustyrose uppercase tracking-[0.3em] text-sm mb-4">Est. 2019 &middot; Ashfield, MA</p>
+    <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">Baked from scratch,<br>every single morning.</h1>
+    <p class="text-lg md:text-xl text-cream/80 max-w-2xl mx-auto mb-8">Sourdough, pastries, and celebration cakes made with local ingredients. Open Wednesday through Sunday.</p>
+    <a href="/menu.html" class="inline-block bg-gold text-warmbrown font-sans font-semibold text-sm uppercase tracking-widest px-8 py-3 rounded hover:bg-gold/90 transition-colors">See Our Menu</a>
+  </div>
+</section>
+
+<!-- Featured Items -->
+<section class="py-16 md:py-24">
+  <div class="max-w-5xl mx-auto px-4">
+    <h2 class="text-center text-3xl font-bold mb-4">This Week's Favorites</h2>
+    <p class="text-center text-warmbrown/70 mb-12 max-w-xl mx-auto">Our bakers choose seasonal ingredients each week. Here's what's coming out of the oven right now.</p>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Item 1 -->
+      <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+        <div class="h-48 bg-dustyrose/20 flex items-center justify-center">
+          <span class="text-6xl">🍞</span>
+        </div>
+        <div class="p-6">
+          <h3 class="font-bold text-lg mb-1">Rosemary Sea Salt Sourdough</h3>
+          <p class="text-warmbrown/60 text-sm mb-3">Our signature loaf. 24-hour ferment with herbs from Ashfield Community Garden.</p>
+          <p class="text-gold font-bold">$8.50</p>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+        <div class="h-48 bg-sage/20 flex items-center justify-center">
+          <span class="text-6xl">🥐</span>
+        </div>
+        <div class="p-6">
+          <h3 class="font-bold text-lg mb-1">Maple Pecan Morning Bun</h3>
+          <p class="text-warmbrown/60 text-sm mb-3">Laminated pastry with local maple syrup and toasted pecans. Best served warm.</p>
+          <p class="text-gold font-bold">$5.25</p>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+        <div class="h-48 bg-dustyrose/20 flex items-center justify-center">
+          <span class="text-6xl">🎂</span>
+        </div>
+        <div class="p-6">
+          <h3 class="font-bold text-lg mb-1">Lemon Elderflower Cake</h3>
+          <p class="text-warmbrown/60 text-sm mb-3">Three layers of lemon sponge with elderflower buttercream. Pre-order only.</p>
+          <p class="text-gold font-bold">$48.00</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Hours & Location -->
+<section class="bg-warmbrown text-cream py-16">
+  <div class="max-w-5xl mx-auto px-4">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="text-3xl font-bold mb-6">Come Say Hello</h2>
+        <p class="text-cream/70 mb-8">We're tucked behind the post office on Main Street in Ashfield. Look for the purple door.</p>
+
+        <div class="space-y-4">
+          <div>
+            <h3 class="font-bold text-gold uppercase text-sm tracking-widest mb-2">Hours</h3>
+            <p class="text-cream/80">Wednesday &ndash; Friday: 7:00am &ndash; 2:00pm</p>
+            <p class="text-cream/80">Saturday &ndash; Sunday: 7:00am &ndash; 3:00pm</p>
+            <p class="text-cream/80">Monday &ndash; Tuesday: Closed</p>
+          </div>
+          <div>
+            <h3 class="font-bold text-gold uppercase text-sm tracking-widest mb-2">Location</h3>
+            <p class="text-cream/80">14 Main Street<br>Ashfield, MA 01330</p>
+          </div>
+        </div>
+      </div>
+      <div class="bg-cream/10 rounded-lg p-8 text-center">
+        <p class="text-5xl mb-4">🌿</p>
+        <p class="text-lg italic">"The kind of bakery you wish was in your town."</p>
+        <p class="text-cream/60 text-sm mt-2">&mdash; Ashfield Gazette, 2024</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Newsletter / CTA -->
+<section class="py-16">
+  <div class="max-w-xl mx-auto px-4 text-center">
+    <h2 class="text-2xl font-bold mb-4">Weekly Bake List</h2>
+    <p class="text-warmbrown/70 mb-6">We send one email every Tuesday evening with the week's menu. No spam, just bread.</p>
+    <div class="flex gap-2 max-w-md mx-auto">
+      <input type="email" placeholder="your@email.com" class="flex-1 px-4 py-3 rounded border border-warmbrown/20 bg-white text-sm focus:outline-none focus:border-dustyrose" disabled>
+      <button class="bg-dustyrose text-white font-sans text-sm font-semibold px-6 py-3 rounded hover:bg-dustyrose/90 transition-colors" disabled>Subscribe</button>
+    </div>
+    <p class="text-warmbrown/40 text-xs mt-2">Newsletter signup is not active on this demonstration site.</p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-warmbrown text-cream/60 py-8">
+  <div class="max-w-5xl mx-auto px-4 text-center text-sm">
+    <p class="mb-2">&copy; 2024 Foxglove Bakery. All rights reserved.</p>
+    <p class="text-cream/40">This is a demonstration website created by GeoScored.</p>
+  </div>
+</footer>
+
+<!-- Mobile menu toggle -->
+<script>
+document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+  document.getElementById('mobile-menu').classList.toggle('hidden');
+});
+</script>
+
+<!--
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  Hey, you're reading the source! Nice.
+
+  If you're the kind of person who inspects HTML comments,
+  you might enjoy this:
+
+  https://geoscored.com/found?token=PLACEHOLDER_FOXGLOVE_001
+
+  Foxglove Bakery is a fictional brand created by GeoScored
+  for demonstration purposes. But that link is real.
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-->
+
 </body>
 </html>

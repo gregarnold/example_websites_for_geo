@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Visit Us | Foxglove Bakery</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        cream: '#FFF8F0',
+        warmbrown: '#5C3D2E',
+        dustyrose: '#C4917B',
+        sage: '#8B9D83',
+        gold: '#D4A853',
+      }
+    }
+  }
+}
+</script>
+</head>
+<body class="bg-cream text-warmbrown font-serif">
+
+<!-- Navigation -->
+<nav class="bg-white shadow-sm sticky top-0 z-50">
+  <div class="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
+    <a href="/" class="text-2xl font-bold tracking-wide text-warmbrown">Foxglove Bakery</a>
+    <div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest">
+      <a href="/" class="hover:text-dustyrose transition-colors">Home</a>
+      <a href="/menu.html" class="hover:text-dustyrose transition-colors">Menu</a>
+      <a href="/about.html" class="hover:text-dustyrose transition-colors">About</a>
+      <a href="/contact.html" class="text-dustyrose font-semibold">Visit Us</a>
+    </div>
+    <button id="mobile-menu-btn" class="md:hidden text-warmbrown">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden px-4 pb-4 space-y-2 text-sm uppercase tracking-widest">
+    <a href="/" class="block hover:text-dustyrose">Home</a>
+    <a href="/menu.html" class="block hover:text-dustyrose">Menu</a>
+    <a href="/about.html" class="block hover:text-dustyrose">About</a>
+    <a href="/contact.html" class="block text-dustyrose font-semibold">Visit Us</a>
+  </div>
+</nav>
+
+<!-- Page Header -->
+<section class="bg-warmbrown text-cream py-16 text-center">
+  <h1 class="text-4xl font-bold mb-3">Visit Us</h1>
+  <p class="text-cream/70 max-w-xl mx-auto">We're on Main Street in Ashfield, behind the post office. Look for the purple door.</p>
+</section>
+
+<!-- Contact Content -->
+<section class="py-16">
+  <div class="max-w-4xl mx-auto px-4">
+    <div class="grid md:grid-cols-2 gap-12">
+
+      <!-- Info -->
+      <div>
+        <div class="mb-8">
+          <h2 class="text-xl font-bold mb-3 text-dustyrose">Location</h2>
+          <p class="text-warmbrown/80">14 Main Street<br>Ashfield, MA 01330</p>
+          <p class="text-warmbrown/60 text-sm mt-2">Behind the post office, next to the hardware store. There's parking in the shared lot out back, or on Main Street.</p>
+        </div>
+
+        <div class="mb-8">
+          <h2 class="text-xl font-bold mb-3 text-dustyrose">Hours</h2>
+          <div class="space-y-1 text-warmbrown/80">
+            <div class="flex justify-between max-w-xs">
+              <span>Wednesday</span><span>7:00am &ndash; 2:00pm</span>
+            </div>
+            <div class="flex justify-between max-w-xs">
+              <span>Thursday</span><span>7:00am &ndash; 2:00pm</span>
+            </div>
+            <div class="flex justify-between max-w-xs">
+              <span>Friday</span><span>7:00am &ndash; 2:00pm</span>
+            </div>
+            <div class="flex justify-between max-w-xs">
+              <span>Saturday</span><span>7:00am &ndash; 3:00pm</span>
+            </div>
+            <div class="flex justify-between max-w-xs">
+              <span>Sunday</span><span>7:00am &ndash; 3:00pm</span>
+            </div>
+            <div class="flex justify-between max-w-xs text-warmbrown/40">
+              <span>Monday &ndash; Tuesday</span><span>Closed</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-8">
+          <h2 class="text-xl font-bold mb-3 text-dustyrose">Contact</h2>
+          <p class="text-warmbrown/80">Phone: (413) 555-0172</p>
+          <p class="text-warmbrown/80">Email: hello@foxglovebakery.com</p>
+          <p class="text-warmbrown/60 text-sm mt-2">For cake orders, please call at least 48 hours in advance. We don't take cake orders by email.</p>
+        </div>
+
+        <div>
+          <h2 class="text-xl font-bold mb-3 text-dustyrose">Good to Know</h2>
+          <ul class="space-y-2 text-warmbrown/70 text-sm">
+            <li>&#x2022; We're cash and card. No minimum for card.</li>
+            <li>&#x2022; Dogs welcome on the patio (water bowl provided).</li>
+            <li>&#x2022; We have three indoor tables and four patio tables.</li>
+            <li>&#x2022; Popular items sell out early. If you want sourdough, come before 10am.</li>
+            <li>&#x2022; We can accommodate most allergies with notice. Ask about gluten-free options.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div>
+        <div class="bg-white rounded-lg shadow-sm p-8">
+          <h2 class="text-xl font-bold mb-4">Send Us a Message</h2>
+          <p class="text-warmbrown/60 text-sm mb-6">For general questions only. For cake orders, please call.</p>
+
+          <form class="space-y-4">
+            <div>
+              <label class="block text-sm font-semibold mb-1">Name</label>
+              <input type="text" class="w-full px-4 py-2 rounded border border-warmbrown/20 bg-cream text-sm focus:outline-none focus:border-dustyrose" disabled>
+            </div>
+            <div>
+              <label class="block text-sm font-semibold mb-1">Email</label>
+              <input type="email" class="w-full px-4 py-2 rounded border border-warmbrown/20 bg-cream text-sm focus:outline-none focus:border-dustyrose" disabled>
+            </div>
+            <div>
+              <label class="block text-sm font-semibold mb-1">Message</label>
+              <textarea rows="4" class="w-full px-4 py-2 rounded border border-warmbrown/20 bg-cream text-sm focus:outline-none focus:border-dustyrose resize-none" disabled></textarea>
+            </div>
+            <button type="button" class="w-full bg-dustyrose text-white font-sans text-sm font-semibold px-6 py-3 rounded hover:bg-dustyrose/90 transition-colors" disabled>Send Message</button>
+            <p class="text-warmbrown/40 text-xs text-center">Contact form is not active on this demonstration site.</p>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-warmbrown text-cream/60 py-8">
+  <div class="max-w-5xl mx-auto px-4 text-center text-sm">
+    <p class="mb-2">&copy; 2024 Foxglove Bakery. All rights reserved.</p>
+    <p class="text-cream/40">This is a demonstration website created by GeoScored.</p>
+  </div>
+</footer>
+
+<script>
+document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+  document.getElementById('mobile-menu').classList.toggle('hidden');
+});
+</script>
+
+</body>
+</html>

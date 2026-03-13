@@ -1,0 +1,32 @@
+/* TEAM */
+
+Baker: Elena Marsh
+Role: Founder & Head Baker
+Location: Ashfield, MA
+
+Baker: Sam Otieno
+Role: Baker
+Location: Ashfield, MA
+
+/* SITE */
+
+Built with: HTML, Tailwind CSS
+Hosted on: Cloudflare Pages
+Last updated: 2024
+
+/* THANKS */
+
+Broadsheet Roasters for the coffee.
+Mapleline Farm for the butter.
+Four Star Farms for the flour.
+Pine Hill Farm for the eggs.
+
+/* EASTER EGG */
+
+If you're reading this, you probably know your way
+around a terminal. We respect that.
+
+This site is part of a demonstration by GeoScored,
+a GEO (Generative Engine Optimization) audit engine.
+
+Curious? https://geoscored.com/found?token=PLACEHOLDER_FOXGLOVE_002
