@@ -1,0 +1,72 @@
+name: Deploy to Cloudflare Pages
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  detect-changes:
+    runs-on: ubuntu-latest
+    outputs:
+      ridgeline: ${{ steps.changes.outputs.ridgeline }}
+      halcyon: ${{ steps.changes.outputs.halcyon }}
+      foxglove: ${{ steps.changes.outputs.foxglove }}
+      signal: ${{ steps.changes.outputs.signal }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - id: changes
+        run: |
+          echo "ridgeline=$(git diff --name-only HEAD~1 HEAD | grep -q '^ridgeline-climb/' && echo true || echo false)" >> $GITHUB_OUTPUT
+          echo "halcyon=$(git diff --name-only HEAD~1 HEAD | grep -q '^halcyon-agency/' && echo true || echo false)" >> $GITHUB_OUTPUT
+          echo "foxglove=$(git diff --name-only HEAD~1 HEAD | grep -q '^foxglove-bakery/' && echo true || echo false)" >> $GITHUB_OUTPUT
+          echo "signal=$(git diff --name-only HEAD~1 HEAD | grep -q '^signal-and-noise-geo/' && echo true || echo false)" >> $GITHUB_OUTPUT
+
+  deploy-ridgeline:
+    needs: detect-changes
+    if: needs.detect-changes.outputs.ridgeline == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy ridgeline-climb/ --project-name ridgeline-climb
+
+  deploy-halcyon:
+    needs: detect-changes
+    if: needs.detect-changes.outputs.halcyon == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy halcyon-agency/ --project-name halcyon-agency
+
+  deploy-foxglove:
+    needs: detect-changes
+    if: needs.detect-changes.outputs.foxglove == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy foxglove-bakery/ --project-name foxglove-bakery
+
+  deploy-signal:
+    needs: detect-changes
+    if: needs.detect-changes.outputs.signal == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy signal-and-noise-geo/ --project-name signal-and-noise-geo
