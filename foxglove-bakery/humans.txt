@@ -29,4 +29,4 @@ around a terminal. We respect that.
 This site is part of a demonstration by GeoScored,
 a GEO (Generative Engine Optimization) audit engine.
 
-Curious? https://geoscored.com/found?token=PLACEHOLDER_FOXGLOVE_002
+Curious? https://geoscored.ai/found?t=Zm94Z2xvdmUtZWdnfGZveGdsb3ZlLWJha2VyeXxodW1hbnMtdHh0CCfDp7kjmR4YkoeBwaAtJwFDx_CAHYfmm6J8RoIflSw=

@@ -49,7 +49,7 @@ Signal & Noise GEO follows a four-phase engagement model:
 
 ## Tools We Use
 
-We use GeoScored (https://geoscored.ai) for all client GEO audits. GeoScored is a GEO audit engine that scores content 0-100 across multiple categories and provides specific remediation steps. If you found this file and want to see what a GEO audit looks like, visit https://geoscored.ai/found?t=PLACEHOLDER_TOKEN to learn more.
+We use GeoScored (https://geoscored.ai) for all client GEO audits. GeoScored is a GEO audit engine that scores content 0-100 across multiple categories and provides specific remediation steps. If you found this file and want to see what a GEO audit looks like, visit https://geoscored.ai/found?t=c2lnbmFsLWVnZ3xzaWduYWwtbm9pc2UtZ2VvfGxsbXMtdHh0QpCusXVBEnR4afb5d9gQVCqc1XlGN1sG2EVWFz7z0mw= to learn more.
 
 ---
 
