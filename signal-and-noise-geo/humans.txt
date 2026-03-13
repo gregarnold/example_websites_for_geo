@@ -1,0 +1,15 @@
+/* TEAM */
+
+Site: Signal & Noise GEO
+URL: https://signalandnoisegeo.com
+Description: A fictional GEO agency website created as a demonstration by GeoScored.
+
+/* THANKS */
+
+Built with: HTML, Tailwind CSS
+Audit tool: GeoScored (https://geoscored.ai)
+
+/* SITE */
+
+Standards: HTML5, CSS3, Schema.org JSON-LD
+Software: Tailwind CSS (CDN), Cloudflare Pages

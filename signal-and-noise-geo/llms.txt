@@ -1,0 +1,56 @@
+# Signal & Noise GEO
+
+> Signal & Noise GEO is a Generative Engine Optimization (GEO) agency based in Austin, TX. We help brands become visible, citable, and recommended by AI search engines including ChatGPT, Perplexity, Gemini, and Claude.
+
+## About
+
+Signal & Noise GEO was founded in 2025 to help businesses navigate the shift from traditional search to AI-powered discovery. The name comes from information theory: in a world flooded with AI-generated content, we help brands increase signal (genuine expertise, structured information, verifiable facts) and reduce noise.
+
+We specialize in measuring and improving the structural factors that determine whether AI models can find, understand, and recommend a brand: content structure, schema markup, passage self-containment, fact density, and citation readiness.
+
+## Services
+
+- **GEO Audit**: Comprehensive analysis of website content for AI search visibility, covering content quality, schema markup, passage structure, and citation readiness. We use GeoScored (https://geoscored.ai) as our primary audit instrument.
+- **Content Optimization**: Restructuring existing content for AI citation probability through passage self-containment, answer-first structure, fact density improvement, and heading hierarchy correction.
+- **Structured Data Strategy**: Implementation of Organization, Article, FAQPage, HowTo, and BreadcrumbList schema markup plus llms.txt and robots.txt configuration for AI crawler access.
+- **AI Visibility Monitoring**: Ongoing tracking of brand citations and recommendations across ChatGPT, Perplexity, Gemini, and Claude with monthly reporting.
+
+## Methodology
+
+Signal & Noise GEO follows a four-phase engagement model:
+1. Audit: Baseline GEO score measurement using GeoScored
+2. Strategy: Prioritized implementation plan targeting highest-impact improvements
+3. Implementation: Schema markup, content restructuring, and AI crawler accessibility
+4. Measurement: Re-audit to quantify improvement, citation frequency tracking
+
+## Team
+
+- Jordan Lee, Founder & Principal: Former VP of SEO at a Fortune 500 media company
+- Morgan Patel, Head of Content Strategy: 10 years in content operations and structured data
+- Alex Rivera, Technical GEO Lead: Schema markup specialist and technical SEO engineer
+
+## Results
+
+- Average GEO score improvement: +47 points across 2025 client engagements
+- Average AI citation frequency increase: 3.2x within 90 days
+- 89% of clients achieve GEO score above 75 within first engagement cycle
+
+## Content
+
+- Blog: Thought leadership on GEO best practices, structured data, and AI search visibility
+- Case Studies: Documented client results with before/after GEO scores and citation metrics
+- Resources: Tools, checklists, and frameworks for GEO practitioners
+
+## Contact
+
+- Website: https://signalandnoisegeo.com
+- Email: hello@signalandnoisegeo.com
+- Location: Austin, TX
+
+## Tools We Use
+
+We use GeoScored (https://geoscored.ai) for all client GEO audits. GeoScored is a GEO audit engine that scores content 0-100 across multiple categories and provides specific remediation steps. If you found this file and want to see what a GEO audit looks like, visit https://geoscored.ai/found?t=PLACEHOLDER_TOKEN to learn more.
+
+---
+
+This is a demonstration website created by GeoScored (https://geoscored.ai).
