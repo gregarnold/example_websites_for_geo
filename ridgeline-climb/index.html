@@ -1,15 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ridgeline-climb - Coming Soon</title>
-<script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ridgeline Climb | Premium Outdoor Climbing Gear</title>
+    <meta name="description" content="Ridgeline Climb offers premium climbing gear and outdoor equipment for every level of adventure.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ridge: {
+                            50: '#f0f7f4',
+                            100: '#d9ebe2',
+                            200: '#b5d7c6',
+                            300: '#84bba3',
+                            400: '#5a9d80',
+                            500: '#3a7d63',
+                            600: '#2c6350',
+                            700: '#255041',
+                            800: '#204035',
+                            900: '#1b352c',
+                            950: '#0e1e19',
+                        },
+                        stone: {
+                            750: '#3f3f3f',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body class="min-h-screen flex items-center justify-center bg-gray-100">
-<div class="text-center">
-<h1 class="text-4xl font-bold text-gray-800 mb-4">Coming Soon</h1>
-<p class="text-gray-600">This site is under construction.</p>
-</div>
+<body class="bg-white text-gray-800 font-sans">
+
+    <!-- Navigation -->
+    <nav class="bg-ridge-900 text-white">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+            <a href="/" class="text-2xl font-bold tracking-tight">Ridgeline Climb</a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="/" class="text-ridge-200 hover:text-white">Home</a>
+                <a href="/products.html" class="hover:text-ridge-200">Products</a>
+                <a href="/about.html" class="hover:text-ridge-200">About</a>
+                <a href="/blog/" class="hover:text-ridge-200">Blog</a>
+                <a href="/partners.html" class="hover:text-ridge-200">Partners</a>
+                <a href="/contact.html" class="hover:text-ridge-200">Contact</a>
+            </div>
+            <button class="md:hidden text-white" aria-label="Menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-ridge-800 text-white py-24">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">Gear That Keeps Up<br>With Your Ambition</h1>
+            <p class="text-xl text-ridge-200 mb-8 max-w-2xl mx-auto">From weekend bouldering to multi-pitch alpine routes, Ridgeline Climb builds equipment that performs when it matters most.</p>
+            <div class="flex justify-center space-x-4">
+                <a href="/products.html" class="bg-white text-ridge-900 px-8 py-3 rounded-lg font-semibold hover:bg-ridge-50 transition">Shop Gear</a>
+                <a href="/about.html" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-ridge-900 transition">Our Story</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Highlights -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-4">Built for the Climb</h2>
+            <p class="text-gray-600 text-center mb-12 max-w-2xl mx-auto">Every piece of gear in our lineup is tested by climbers, for climbers. We focus on durability, safety, and performance across all our product categories.</p>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-sm p-6">
+                    <div class="w-full h-48 bg-ridge-100 rounded-lg mb-4 flex items-center justify-center">
+                        <span class="text-ridge-600 text-sm">Product Image</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Climbing Harnesses</h3>
+                    <p class="text-gray-600">Our harness line features adjustable leg loops, reinforced tie-in points, and breathable padding for long days on the wall. Available in sport, trad, and alpine configurations to match your climbing style.</p>
+                    <a href="/products.html" class="text-ridge-600 font-medium mt-4 inline-block hover:text-ridge-800">View Collection &rarr;</a>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-sm p-6">
+                    <div class="w-full h-48 bg-ridge-100 rounded-lg mb-4 flex items-center justify-center">
+                        <span class="text-ridge-600 text-sm">Product Image</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Technical Apparel</h3>
+                    <p class="text-gray-600">Layering systems designed for mountain environments. Our shells, midlayers, and base layers use materials that handle moisture, wind, and temperature changes through long approaches and exposed pitches.</p>
+                    <a href="/products.html" class="text-ridge-600 font-medium mt-4 inline-block hover:text-ridge-800">View Collection &rarr;</a>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-sm p-6">
+                    <div class="w-full h-48 bg-ridge-100 rounded-lg mb-4 flex items-center justify-center">
+                        <span class="text-ridge-600 text-sm">Product Image</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Protection Hardware</h3>
+                    <p class="text-gray-600">Cams, nuts, and quickdraws engineered for reliability. Our protection hardware is forged from aerospace-grade aluminum and tested well beyond UIAA standards before it leaves our facility.</p>
+                    <a href="/products.html" class="text-ridge-600 font-medium mt-4 inline-block hover:text-ridge-800">View Collection &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Story Teaser -->
+    <section class="py-20">
+        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <div class="w-full h-80 bg-ridge-100 rounded-xl flex items-center justify-center">
+                    <span class="text-ridge-600 text-sm">Brand lifestyle image showing climbers on a mountain route</span>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-3xl font-bold mb-4">Born in the Mountains</h2>
+                <p class="text-gray-600 mb-4">Ridgeline Climb started in a garage in Boulder, Colorado, when two climbing partners got tired of gear that failed on the routes they cared about most. What began as modified harnesses for local trad climbing evolved into a full line of equipment trusted by climbers across North America.</p>
+                <p class="text-gray-600 mb-6">Today we design, test, and ship from our facility at the base of the Flatirons. Every product is field-tested on real rock before it earns the Ridgeline name.</p>
+                <a href="/about.html" class="text-ridge-600 font-semibold hover:text-ridge-800">Read Our Full Story &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section class="py-16 bg-ridge-50">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-8">What Climbers Say</h2>
+            <blockquote class="text-xl text-gray-700 italic mb-4">"I switched to Ridgeline harnesses two seasons ago and haven't looked back. The fit is better, the gear loops are actually usable, and the whole thing weighs less than what I was using before."</blockquote>
+            <p class="text-gray-500 font-medium">Jordan M., Yosemite Valley</p>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-16">
+        <div class="max-w-2xl mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold mb-4">Stay on the Route</h2>
+            <p class="text-gray-600 mb-6">Get updates on new gear drops, climbing tips, and community events. We send one email per month, sometimes fewer.</p>
+            <form class="flex flex-col sm:flex-row gap-3 justify-center">
+                <input type="email" placeholder="your@email.com" class="px-4 py-3 border border-gray-300 rounded-lg flex-1 max-w-sm" aria-label="Email address">
+                <button type="button" class="bg-ridge-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-ridge-800 transition">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-ridge-950 text-gray-400 py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-white font-semibold mb-3">Ridgeline Climb</h3>
+                    <p class="text-sm">Premium climbing gear and outdoor equipment, designed and tested in Boulder, Colorado.</p>
+                </div>
+                <div>
+                    <h3 class="text-white font-semibold mb-3">Shop</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/products.html" class="hover:text-white">All Products</a></li>
+                        <li><a href="/products.html" class="hover:text-white">Harnesses</a></li>
+                        <li><a href="/products.html" class="hover:text-white">Apparel</a></li>
+                        <li><a href="/products.html" class="hover:text-white">Hardware</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-semibold mb-3">Company</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/about.html" class="hover:text-white">About Us</a></li>
+                        <li><a href="/partners.html" class="hover:text-white">Partners</a></li>
+                        <li><a href="/blog/" class="hover:text-white">Blog</a></li>
+                        <li><a href="/contact.html" class="hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-semibold mb-3">Connect</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white">Instagram</a></li>
+                        <li><a href="#" class="hover:text-white">YouTube</a></li>
+                        <li><a href="#" class="hover:text-white">Strava</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between items-center text-sm">
+                <p>&copy; 2026 Ridgeline Climb. All rights reserved.</p>
+                <div class="flex items-center space-x-4 mt-3 md:mt-0">
+                    <span class="text-gray-500 text-xs">This is a demonstration website created by GeoScored.</span>
+                    <a href="https://geoscored.ai" class="text-gray-500 text-xs hover:text-gray-300">Audited by GeoScored</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>

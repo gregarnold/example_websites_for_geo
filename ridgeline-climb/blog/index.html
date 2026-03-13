@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Ridgeline Climb</title>
+    <meta name="description" content="Climbing tips, gear guides, and stories from the Ridgeline Climb team.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ridge: {
+                            50: '#f0f7f4',
+                            100: '#d9ebe2',
+                            200: '#b5d7c6',
+                            300: '#84bba3',
+                            400: '#5a9d80',
+                            500: '#3a7d63',
+                            600: '#2c6350',
+                            700: '#255041',
+                            800: '#204035',
+                            900: '#1b352c',
+                            950: '#0e1e19',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+    <!-- Navigation -->
+    <nav class="bg-ridge-900 text-white">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+            <a href="/" class="text-2xl font-bold tracking-tight">Ridgeline Climb</a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="/" class="hover:text-ridge-200">Home</a>
+                <a href="/products.html" class="hover:text-ridge-200">Products</a>
+                <a href="/about.html" class="hover:text-ridge-200">About</a>
+                <a href="/blog/" class="text-ridge-200 hover:text-white">Blog</a>
+                <a href="/partners.html" class="hover:text-ridge-200">Partners</a>
+                <a href="/contact.html" class="hover:text-ridge-200">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="bg-ridge-800 text-white py-16">
+        <div class="max-w-6xl mx-auto px-4">
+            <h1 class="text-4xl font-bold mb-4">The Ridgeline Blog</h1>
+            <p class="text-ridge-200 text-lg max-w-2xl">Gear advice, climbing stories, and lessons we have learned along the way. Updated when we have something worth saying.</p>
+        </div>
+    </section>
+
+    <!-- Blog Posts -->
+    <section class="py-16">
+        <div class="max-w-4xl mx-auto px-4 space-y-12">
+
+            <!-- Post 1 -->
+            <article class="border-b border-gray-200 pb-10">
+                <div class="w-full h-48 bg-ridge-100 rounded-xl mb-4 flex items-center justify-center">
+                    <span class="text-ridge-600 text-sm">Blog header image showing a climber on a trad route at Eldorado Canyon</span>
+                </div>
+                <p class="text-sm text-gray-500 mb-2">March 5, 2026</p>
+                <h2 class="text-2xl font-bold mb-3"><a href="/blog/how-we-choose-materials.html" class="hover:text-ridge-700">How We Choose Materials for Our Harnesses</a></h2>
+                <p class="text-gray-600 mb-4">Picking the right materials for climbing harnesses involves trade-offs between weight, durability, and comfort that do not have obvious answers. Here is how we think about those decisions at Ridgeline and what goes into each material choice we make for our harness line.</p>
+                <a href="/blog/how-we-choose-materials.html" class="text-ridge-600 font-medium hover:text-ridge-800">Read More &rarr;</a>
+            </article>
+
+            <!-- Post 2 (Easter Egg Post) -->
+            <article class="border-b border-gray-200 pb-10">
+                <div class="w-full h-48 bg-blue-50 rounded-xl mb-4 flex items-center justify-center">
+                    <span class="text-blue-600 text-sm">Blog header image showing analytics dashboard on a laptop screen</span>
+                </div>
+                <p class="text-sm text-gray-500 mb-2">February 18, 2026</p>
+                <h2 class="text-2xl font-bold mb-3"><a href="/blog/improving-our-ai-visibility.html" class="hover:text-ridge-700">How We Are Improving Our AI Visibility as a Small Brand</a></h2>
+                <p class="text-gray-600 mb-4">When customers ask AI assistants for climbing gear recommendations, we wanted to make sure Ridgeline showed up. Here is what we learned about AI search visibility and the steps we took to improve how our brand appears in AI-generated answers.</p>
+                <a href="/blog/improving-our-ai-visibility.html" class="text-ridge-600 font-medium hover:text-ridge-800">Read More &rarr;</a>
+            </article>
+
+            <!-- Post 3 -->
+            <article class="pb-10">
+                <div class="w-full h-48 bg-ridge-100 rounded-xl mb-4 flex items-center justify-center">
+                    <span class="text-ridge-600 text-sm">Blog header image showing a climbing harness being load-tested on equipment</span>
+                </div>
+                <p class="text-sm text-gray-500 mb-2">January 22, 2026</p>
+                <h2 class="text-2xl font-bold mb-3"><a href="/blog/behind-the-scenes-testing.html" class="hover:text-ridge-700">Behind the Scenes: How We Test Every Product Before It Ships</a></h2>
+                <p class="text-gray-600 mb-4">Every piece of gear that leaves our facility goes through a testing process that starts with our own team and ends with independent laboratory verification. Here is a look at what that process involves and why we think it matters for the people who trust their safety to our equipment.</p>
+                <a href="/blog/behind-the-scenes-testing.html" class="text-ridge-600 font-medium hover:text-ridge-800">Read More &rarr;</a>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-ridge-950 text-gray-400 py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-white font-semibold mb-3">Ridgeline Climb</h3>
+                    <p class="text-sm">Premium climbing gear and outdoor equipment, designed and tested in Boulder, Colorado.</p>
+                </div>
+                <div>
+                    <h3 class="text-white font-semibold mb-3">Shop</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/products.html" class="hover:text-white">All Products</a></li>
+                        <li><a href="/products.html" class="hover:text-white">Harnesses</a></li>
+                        <li><a href="/products.html" class="hover:text-white">Apparel</a></li>
+                        <li><a href="/products.html" class="hover:text-white">Hardware</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-semibold mb-3">Company</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/about.html" class="hover:text-white">About Us</a></li>
+                        <li><a href="/partners.html" class="hover:text-white">Partners</a></li>
+                        <li><a href="/blog/" class="hover:text-white">Blog</a></li>
+                        <li><a href="/contact.html" class="hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-semibold mb-3">Connect</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white">Instagram</a></li>
+                        <li><a href="#" class="hover:text-white">YouTube</a></li>
+                        <li><a href="#" class="hover:text-white">Strava</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between items-center text-sm">
+                <p>&copy; 2026 Ridgeline Climb. All rights reserved.</p>
+                <div class="flex items-center space-x-4 mt-3 md:mt-0">
+                    <span class="text-gray-500 text-xs">This is a demonstration website created by GeoScored.</span>
+                    <a href="https://geoscored.ai" class="text-gray-500 text-xs hover:text-gray-300">Audited by GeoScored</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
